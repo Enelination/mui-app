@@ -5,11 +5,9 @@ import PeopleOutlineIcon from "@material-ui/icons/PeopleOutline";
 import { makeStyles, Paper } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    pageContent: {
-      margin: theme.spacing(5),
-      padding: theme.spacing(3),
-    },
+  pageContent: {
+    margin: theme.spacing(5),
+    padding: theme.spacing(3),
   },
 }));
 

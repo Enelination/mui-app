@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
 
-export default function useForm(initialFValues) {
+export function useForm(initialFValues) {
   const [values, setValues] = useState(initialFValues);
 
   const handleInputChange = (e) => {
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
 export function Form(props) {
   const classes = useStyles();
   return <form className={classes.root}>{props.children}</form>;
